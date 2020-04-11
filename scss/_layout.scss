@@ -127,6 +127,10 @@ z-index: 200;
         position: relative;
         left: -200px;
 
+        @media(max-width:1300px) {
+            left: -150px;
+        }
+
         img {
             width: 100%; //So image is responsive and takes full width of its parent element
             opacity: .7;
@@ -141,14 +145,28 @@ z-index: 200;
         padding: 0 100px;
         box-sizing: border-box;
 
+        @media(max-width:1300px) {
+            padding: 0 50px;
+        }
+
         .stars {
             margin: 30px 0;
+
+            @media(max-width:1000px) {
+                margin: 15px 0;
+            
+            }
         }
 
         .star {
             font-size: 15px;
             color: $color-primary;
             margin-left: 10px;
+
+            @media(max-width:1000px) {
+                font-size: 12px;
+            
+            }
         }
 
         .description {
@@ -158,8 +176,19 @@ z-index: 200;
             color: $color-secondary;
             text-align: justify;
 
+            
+
         &::first-letter {
             padding-left: 50px;
+        }
+
+        @media(max-width: 1600px){
+            font-size: 18px;
+        }
+
+        @media(max-width:1000px) {
+            font-size: 14px;
+        
         }
         }
     }
@@ -201,6 +230,11 @@ z-index: 200;
 
             &:hover {
                 color: $color-primary;
+            }
+
+            @media(max-width:1000px) {
+                font-size: 35px;
+            
             }
         }
     }
