@@ -25,7 +25,7 @@ body {
         width: 50%;
         position: absolute;
         box-shadow: 0 15px 60px rgba(0, 0, 1, 0.4);
-        opacity: .7;
+        opacity: 0.7;
         border-radius: 10px; }
       .navbar-navigation-left .left-img-1 {
         top: 15%;
@@ -59,7 +59,7 @@ body {
         display: block;
         margin: 20px;
         text-align: center;
-        transition: all .5s; }
+        transition: all 0.5s; }
         .navbar-navigation-right .nav-list-link:hover {
           color: #d3ab55;
           letter-spacing: 4px; }
@@ -94,6 +94,12 @@ body {
     transform: translate(-50%, -50%);
     display: flex;
     align-items: center; }
+    @media (max-width: 500px) {
+      .header .brand {
+        position: absolute;
+        top: 12%;
+        left: 50%;
+        transform: translate(-50%, -50%); } }
   .header-banner {
     position: absolute;
     top: 50%;
@@ -112,9 +118,12 @@ body {
     @media (max-width: 1300px) {
       .about-us-left {
         left: -150px; } }
+    @media (max-width: 800px) {
+      .about-us-left {
+        display: none; } }
     .about-us-left img {
       width: 100%;
-      opacity: .7; }
+      opacity: 0.7; }
   .about-us-right {
     width: 60%;
     display: flex;
@@ -125,6 +134,9 @@ body {
     @media (max-width: 1300px) {
       .about-us-right {
         padding: 0 50px; } }
+    @media (max-width: 800px) {
+      .about-us-right {
+        width: 100%; } }
     .about-us-right .stars {
       margin: 30px 0; }
       @media (max-width: 1000px) {
@@ -177,7 +189,7 @@ body {
       text-decoration: none;
       font-size: 50px;
       color: #bbb;
-      transition: color .7s; }
+      transition: color 0.7s; }
       .footer .social-media-link:hover {
         color: #d3ab55; }
       @media (max-width: 1000px) {
@@ -190,6 +202,11 @@ body {
     font-weight: 300;
     letter-spacing: 2px;
     text-transform: capitalize; }
+    @media (max-width: 800px) {
+      .footer-copyright-paragraph {
+        width: 70%;
+        margin: auto;
+        text-align: center; } }
 
 .hamburger-menu {
   width: 40px;
@@ -198,6 +215,14 @@ body {
   top: 10%;
   right: 5%;
   z-index: 300; }
+  @media (max-width: 800px) {
+    .hamburger-menu {
+      width: 35px;
+      height: 35px; } }
+  @media (max-width: 500px) {
+    .hamburger-menu {
+      width: 25px;
+      height: 25px; } }
   .hamburger-menu .menu {
     display: flex;
     flex-direction: column;
@@ -210,6 +235,12 @@ body {
       background-color: #d3ab55;
       transform-origin: right;
       transition: all 0.5s 0.5s; }
+      @media (max-width: 800px) {
+        .hamburger-menu .menu-line {
+          height: 3px; } }
+      @media (max-width: 500px) {
+        .hamburger-menu .menu-line {
+          height: 2px; } }
 
 .logo {
   font-size: 70px;
@@ -228,6 +259,12 @@ body {
       font-size: 50px;
       width: 90px;
       height: 90px; } }
+  @media (max-width: 500px) {
+    .logo {
+      width: 50px;
+      height: 50px;
+      font-size: 30px;
+      border-width: 2px; } }
 
 .main-name {
   font-family: "Nunito", sans-serif;
@@ -239,6 +276,10 @@ body {
   @media (max-width: 1000px) {
     .main-name {
       font-size: 40px; } }
+  @media (max-width: 500px) {
+    .main-name {
+      font-size: 20px;
+      text-align: center; } }
 
 .sub-name {
   font-family: "Josefin Sans", sans-serif;
@@ -248,6 +289,9 @@ body {
   font-weight: 300;
   letter-spacing: 2px;
   text-transform: uppercase; }
+  @media (max-width: 500px) {
+    .sub-name {
+      font-size: 12px; } }
 
 .main-heading {
   font-family: "Dancing Script", cursive;
@@ -261,6 +305,10 @@ body {
   @media (max-width: 1000px) {
     .main-heading {
       font-size: 60px; } }
+  @media (max-width: 500px) {
+    .main-heading {
+      font-size: 40px;
+      margin-bottom: 20px; } }
 
 .sub-heading {
   font-family: "Josefin Sans", sans-serif;
@@ -280,6 +328,10 @@ body {
   @media (max-width: 1000px) {
     .sub-heading {
       font-size: 30px; } }
+  @media (max-width: 500px) {
+    .sub-heading {
+      font-size: 20px;
+      margin-bottom: 10px; } }
 
 .main-btn {
   width: 170px;
@@ -294,6 +346,14 @@ body {
   outline: none;
   cursor: pointer;
   transition: all 0.4s; }
+  @media (max-width: 800px) {
+    .main-btn {
+      width: 150px;
+      font-size: 12px; } }
+  @media (max-width: 500px) {
+    .main-btn {
+      width: 130px;
+      font-size: 12px; } }
   .main-btn:hover {
     background-color: #d3ab55;
     color: #262626; }
@@ -326,6 +386,9 @@ body {
       @media (max-width: 900px) {
         .card-overlay-heading {
           font-size: 35px; } }
+      @media (max-width: 650px) {
+        .card-overlay-heading {
+          font-size: 20px; } }
     .card-overlay-paragraph {
       font-family: "Josefin Sans", sans-serif;
       font-size: 30px;
@@ -336,6 +399,9 @@ body {
       @media (max-width: 900px) {
         .card-overlay-paragraph {
           font-size: 20px; } }
+      @media (max-width: 650px) {
+        .card-overlay-paragraph {
+          font-size: 15px; } }
     .card-overlay-btn {
       width: 150px;
       height: 40px;
@@ -353,6 +419,11 @@ body {
         .card-overlay-btn {
           font-size: 12px;
           width: 130px;
+          height: 30px; } }
+      @media (max-width: 650px) {
+        .card-overlay-btn {
+          font-size: 10px;
+          width: 100px;
           height: 30px; } }
   .card-img {
     object-fit: cover;
